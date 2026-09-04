@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-container">
@@ -17,7 +24,6 @@
             <div class="nav-menu">
                 <a href="games.html" class="nav-link">Games 🎮</a>
                 <a href="discord-bot.html" class="nav-link">Others 🛠️</a>
-                <a href="#" class="nav-link currency">INR (₹) 📍</a>
             </div>
 
             <button class="get-started-btn">Get Started</button>
@@ -27,24 +33,22 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <div class="rating">
+            <div class="rating animated">
                 <span class="stars">⭐⭐⭐⭐⭐</span>
                 <span class="review-text">4.7 (6500+ Reviews)</span>
             </div>
 
-            <h1 class="hero-title">
-                Unleash the Power of
-                <br>
-                Reliable Game Hosting
-                <br>
+            <h1 class="hero-title glitch" data-text="Unleash the Power of Reliable Game Hosting with HikeNode">
+                Unleash the Power of<br>
+                Reliable Game Hosting<br>
                 with <span class="highlight">HikeNode</span>
             </h1>
 
-            <p class="hero-description">
+            <p class="hero-description fadeIn">
                 Game server hosting in India trusted by gaming creators, Minecraft networks, and large gaming communities since 2019. HikeNode serves over 6,500 active servers with low-latency infrastructure, DDoS protection, and reliable uptime.
             </p>
 
-            <p class="deploy-text">Deploy Your Game Server in 30 Seconds – Try for Free!</p>
+            <p class="deploy-text pulse">Deploy Your Game Server in 30 Seconds – Try for Free!</p>
 
             <div class="hero-buttons">
                 <button class="btn btn-primary">View Plans</button>
@@ -61,7 +65,7 @@
 
                 <div class="service-item">
                     <div class="minecraft-logo">
-                        <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="50" height="50" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
                             <rect x="8" y="15" width="10" height="10" fill="#91b259"/>
                             <rect x="18" y="15" width="10" height="10" fill="#8fa755"/>
                             <rect x="28" y="15" width="10" height="10" fill="#845ec2"/>
@@ -85,7 +89,7 @@
 
                 <div class="service-item">
                     <div class="palworld-logo">
-                        <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="50" height="50" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="30" cy="22" r="12" fill="#ff6b35"/>
                             <circle cx="22" cy="36" r="9" fill="#ff8c42"/>
                             <circle cx="38" cy="36" r="9" fill="#ff8c42"/>
@@ -102,7 +106,7 @@
 
                 <div class="service-item">
                     <div class="discord-logo">
-                        <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="50" height="50" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
                             <rect width="60" height="60" rx="15" fill="#5865f2"/>
                             <circle cx="20" cy="25" r="5" fill="white"/>
                             <circle cx="40" cy="25" r="5" fill="white"/>
@@ -121,7 +125,7 @@
 
     <!-- Features Section -->
     <section class="features">
-        <h2>Our most popular hosting services</h2>
+        <h2 class="section-title">Our most popular hosting services</h2>
         <div class="features-grid">
             <div class="feature-card">
                 <div class="feature-img">🎮</div>
@@ -150,6 +154,18 @@
         document.querySelectorAll('.hero-buttons .btn').forEach(btn => {
             btn.addEventListener('click', function() {
                 window.location.href = 'games.html';
+            });
+        });
+
+        // Parallax effect
+        document.addEventListener('mousemove', (e) => {
+            const blobs = document.querySelectorAll('.blob');
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+
+            blobs.forEach((blob, index) => {
+                const move = (index + 1) * 20;
+                blob.style.transform = `translate(${x * move}px, ${y * move}px)`;
             });
         });
     </script>
