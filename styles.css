@@ -314,7 +314,7 @@ body {
 
 .service-item {
     display: grid;
-    grid-template-columns: 60px 1fr auto;
+    grid-template-columns: 70px 1fr auto;
     gap: 20px;
     align-items: center;
     padding: 20px;
@@ -334,6 +334,44 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 8px;
+}
+
+.minecraft-logo,
+.palworld-logo,
+.discord-logo {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.minecraft-logo {
+    background: linear-gradient(135deg, #8fa755, #91b259);
+}
+
+.minecraft-logo svg {
+    width: 50px;
+    height: 50px;
+}
+
+.palworld-logo {
+    background: linear-gradient(135deg, #ff6b35, #ff8c42);
+}
+
+.palworld-logo svg {
+    width: 50px;
+    height: 50px;
+}
+
+.discord-logo {
+    background: #5865f2;
+}
+
+.discord-logo svg {
+    width: 50px;
+    height: 50px;
 }
 
 .service-info h3 {
