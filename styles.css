@@ -504,40 +504,40 @@ body {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
 }
 
-.minecraft-logo {
+.wallpaper_minecraft_pc_bundle_1920x1080 {
     background: linear-gradient(135deg, #8fa755, #91b259);
     animation-delay: 0s;
 }
 
-.minecraft-logo svg {
+.wallpaper_minecraft_pc_bundle_1920x1080 svg {
     width: 80px;
     height: 80px;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
-.minecraft-logo img,
-.palworld-logo img,
-.discord-logo img {
+.wallpaper_minecraft_pc_bundle_1920x1080 img,
+.palwprd img,
+.discordbot img {
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
-.palworld-logo {
+.palwprd {
     background: linear-gradient(135deg, #ff6b35, #ff8c42);
     animation-delay: 0.5s;
 }
 
-.palworld-logo svg {
+.palwprd svg {
     width: 80px;
     height: 80px;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
-.discord-logo {
+.discordbot {
     background: linear-gradient(135deg, #5865f2, #7289da);
     animation-delay: 1s;
 }
 
-.discord-logo svg {
+.discordbot svg {
     width: 80px;
     height: 80px;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
